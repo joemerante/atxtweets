@@ -5,9 +5,10 @@
   clear: right;
   margin-top: 20px;
   margin-left: 30px;
-  width: 300px;
+  width: 320px;
   float: right;
-  min-height: 200px;
+  max-height: 500px;
+  overflow-y: scroll;
 
   blockquote {
     margin: 0;

@@ -1,5 +1,5 @@
 <div id="tweets">
-	<% Tweet.order("tweet_id desc").limit(3).each do |tweet| %>
+	<% Tweet.order("tweet_id desc").limit(50).each do |tweet| %>
   		<blockquote><%= tweet.content %></blockquote>
   		<div class="from">&mdash; @<%= tweet.twitter_name %></div>
   		<div class="from">Tweeted at: @<%= tweet.tweeted_at %></div>
@@ -14,6 +14,9 @@ https://twitter.com/paulmdavis/status/244554260874948609
  also need to add in user photo
 	-->
 
+	<!-- set up autoscroll -->
+
+<img src="assets/cfaatx_2.png">
 <h1>Welcome</h1>
 
 <p>Since Twitter search results don't last forever, I set up this site to archive tweets with hashtag #cfaATX once a day.</p>
