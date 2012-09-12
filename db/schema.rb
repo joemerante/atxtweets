@@ -13,10 +13,13 @@
 
 ActiveRecord::Schema.define(:version => 20120911235853) do
 
-  create_table "testimonies", :force => true do |t|
+  create_table "tweets", :force => true do |t|
     t.string   "tweet_id"
-    t.string   "screen_name"
+    t.string   "user_name"
+    t.string   "twitter_name"
     t.text     "content"
+    t.date     "tweeted_at"
+    t.string   "user_image"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
