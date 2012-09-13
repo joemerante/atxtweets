@@ -1,9 +1,9 @@
 <div id="tweets">
 	<% Tweet.order("tweet_id desc").each do |tweet| %>
-  		<blockquote> <%= tweet.twitter_name %></blockquote>
+  		<p> <%= tweet.twitter_name %> says:</p>
   		<blockquote><%= auto_link(tweet.content) %></blockquote>
   		
-  		<p>Tweet time: <%= tweet.tweeted_at %></p>
+  		<p><%= tweet.tweeted_at %> | <a href="https://twitter.com/<%= tweet.twitter_name %>/status/<%= tweet.tweet_id %>">Permalink</a></p>
 	<% end %>
 </div>
 
