@@ -1,5 +1,7 @@
 # Archive tweets using the Twitter API
 
+In-progress deployed version [here](http://atxtweets.herokuapp.com/)
+
 Since Twitter search results don't last forever, I set up this site to archive tweets with hashtag #cfaATX. Also, I wanted an opportunity to play with the Twitter gem. As always, great pointers and framework from Ryan Bates, see Railscast 359.
 
 If you just need a widget to embed on your site, you can create a new Twitter widget at https://twitter.com/settings/widgets/new by "Choosing a timeline source" and picking a user's timeline, favorites list, list, or search results. The resulting code can be dropped into any site. Include 'www.' in the Domain depending on your server set up, or just include the url with and without it. Note that these widgets allow interactions, which is cool!
