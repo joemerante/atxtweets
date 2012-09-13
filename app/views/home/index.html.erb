@@ -1,8 +1,9 @@
 <div id="tweets">
 	<% Tweet.order("tweet_id desc").each do |tweet| %>
+  		<blockquote> <%= tweet.twitter_name %></blockquote>
   		<blockquote><%= auto_link(tweet.content) %></blockquote>
-  		<div class="from">&mdash; @<%= tweet.twitter_name %></div>
-  		<div class="from">Tweeted at: @<%= tweet.tweeted_at %></div>
+  		
+  		<p>Tweet time: <%= tweet.tweeted_at %></p>
 	<% end %>
 </div>
 
