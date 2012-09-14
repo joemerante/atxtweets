@@ -35,6 +35,13 @@ class Tweet < ActiveRecord::Base
 		end
 	end
 
+	def display_hashtag(string)
+		matches = string.scan(/#([a-z0-9_]+)/i)
+		matches.each do |match| 
+			string.gsub(match, '<a href="https://twitter.com/search/<%= match %>">match</a>')
+		end
+	end
+
 end
 
 

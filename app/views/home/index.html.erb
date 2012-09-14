@@ -1,23 +1,17 @@
 <div id="tweets">
 	<% Tweet.order("tweet_id desc").each do |tweet| %>
-  		<p> <%= tweet.twitter_name %> says:</p>
-  		<blockquote><%= auto_link(tweet.content) %></blockquote>
+  		<p><a href="https://twitter.com/<%= tweet.twitter_name %>">@<%= tweet.twitter_name %></a> says:</p>
+  		<blockquote><%= display_twitter_name(display_hashtag(tweet.content)) %></blockquote>
   		<p><%= tweet.tweeted_at %> | <a href="https://twitter.com/<%= tweet.twitter_name %>/status/<%= tweet.tweet_id %>">Permalink</a></p>
   		<hr />
 	<% end %>
 </div>
 
-
-<!-- 
-add in perma-url in the format of 
-https://twitter.com/paulmdavis/status/244554260874948609
- html_safe https :// twitter.com/   #{testimony.screen_name} / status / 
- also need to add in user photo
-	-->
-
-	<!-- set up autoscroll -->
-
 <img src="assets/cfaatx_2.png">
 <h1>#cfaATX Tweets</h1>
 
-<h3>Since Twitter search results don't last forever, I set up this site to archive tweets with hashtag #cfaATX once a day. It begins the morning of Code Across America II: Y'all Come Hack Now! on Saturday, September 8, 2012.</h3>
+<h3><p>Since Twitter search results don't last forever, I set up this site to archive tweets with hashtag #cfaATX once a day. </p></h3>
+
+<h4><p>It begins the morning of Code Across America II: Y'all Come Hack Now! on Saturday, September 8, 2012.</p></h4>
+
+
