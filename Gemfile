@@ -8,7 +8,7 @@ gem 'rails_autolink'
 
 
 gem 'pg'
-
+gem 'newrelic_rpm'
 
 
 # Gems used only for assets and not required
