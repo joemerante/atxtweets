@@ -12,7 +12,7 @@ Things to note:
 *Note that Twitter limits unauthenticated requests to 150/hr. You can authenticate and increase that, but for the basic search thing this app does (as of the initial commit), not sure it's really necessary. If a request is returning nothing, try this in the Rails console: `Twitter.rate_limit_status`
 
 
-Resources:
+Resources:  
 [Railscast Episode 359](http://railscasts.com/episodes/359-twitter-integration)  
 [Twitter gem](https://github.com/sferik/twitter)  
 [Twitter gem docs](http://rdoc.info/gems/twitter)  
