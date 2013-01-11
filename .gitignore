@@ -19,3 +19,6 @@ env.sh
 /coverage
 .env
 tags
+
+# Ignore default file output name from running csv_dump.rb script
+tweets.csv
